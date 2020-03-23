@@ -1,0 +1,210 @@
+/* *{
+    background-color: rgba(0, 0, 0, 0.1);
+}*/
+
+/*
+old rose
+#B8583E
+
+light steel blue
+#CAD5DF
+
+dark slate gray
+#1F2C2A
+
+light slate gray
+#739195
+#8CA8B0
+
+*/
+
+.main-theme{
+    background-color: #739195;
+}
+
+.light-theme{
+    background-color: #CAD5DF;
+}
+
+.dark-theme, h1, h2, h3, h4{
+    background-color: #1F2C2A;
+    color: #B8583E;
+}
+
+.color-theme{
+    background-color: #B8583E;
+}
+
+/*style des titres */
+h1, h2, h3, h4{
+    /* arrondis du block */
+    border-radius: 10px;
+    text-align: center;
+    /* marge exterieur */
+    margin: 0 5%;
+    /* marge intérieure */
+    padding: 10px;
+}
+
+article{
+    padding: 2%;
+    background-color: rgba(115, 145, 149, 0.80);
+    -webkit-box-shadow: 10px 10px 12px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 12px 1px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 12px 1px rgba(0,0,0,0.75);
+}
+
+li{
+    list-style-type: square;
+}
+
+body{
+    background-image: url("../images/benjamin-suter.jpg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+
+aside{
+    float: left;
+    position: fixed;
+}
+
+section{
+    float: right;
+}
+
+footer{
+    clear: both;
+    padding: 15px 0;
+    text-align: center;
+}
+
+a{
+    color: #B8583E;
+}
+
+a:visited{
+    color: #97381f;
+}
+
+/* padding */
+
+.p1{
+    padding: 1em;
+}
+
+.p2{
+    padding: 2em;
+}
+
+.p3{
+    padding: 3em;
+}
+
+.p4{
+    padding: 4em;
+}
+
+/* margin */
+
+.m2{
+    margin: 10vh 10vw;
+}
+
+.m4{
+    margin: 20vh 20vw;
+}
+
+/* margin-top */
+
+.mt2{
+    margin-top: 10vh;
+}
+
+.mt4{
+    margin-top: 20vh;
+}
+
+/* margin-bottom */
+
+.mb2{
+    margin-bottom: 10vh;
+}
+
+.mb4{
+    margin-bottom: 20vh;
+}
+
+/* margin-right */
+
+.mr2{
+    margin-right: 10vw;
+}
+
+.mr4{
+    margin-right: 20vw;
+}
+
+/* margin vertical */
+
+.mv-auto{
+    margin: auto 0;
+}
+
+/* margin horizontal */
+
+.mh-auto{
+    margin: 0 auto;
+}
+
+/* largeur d'un élément */
+
+.w10{
+    width: 10%;
+    min-width: 10%;
+}
+
+.w20{
+    width: 20%;
+    min-width: 20%;
+}
+
+.w40{
+    width: 40%;
+    min-width: 40%;
+}
+
+.w60{
+    width: 60%;
+    min-width: 60%;
+}
+
+.w80{
+    width: 80%;
+    min-width: 80%;
+}
+
+.w100{
+    width: 100%;
+    min-width: 100%;
+}
+
+/* class pour le flex */
+
+.flex{
+    /* activation des flexbox */
+    display: flex;
+    /* 
+    direction du flex: par défaut c'est row (affichage en ligne)
+    */
+    /* flex-direction: column;
+    align-content: space-around;
+    */
+    justify-content: space-around;
+    align-self: center;
+    flex-basis: auto;
+    flex-wrap: wrap;
+}

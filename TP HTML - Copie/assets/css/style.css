@@ -1,0 +1,145 @@
+h1{
+    text-align: center;
+}
+
+section{
+    background-color: #e1d2b8;
+}
+
+IMG.display{
+    display: block;
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+    align-self: center;
+}
+
+button.btn{
+    display: block;
+    border-radius: 25%;
+    color: white;
+    background-color: #4caf50;
+    align-self: center;
+}
+
+label{
+    margin-top: 0;
+}
+
+.c{
+    align-self: center;
+}
+
+/* padding */
+
+.p1{
+    padding: 1em;
+}
+
+.p2{
+    padding: 2em;
+}
+
+.p3{
+    padding: 3em;
+}
+
+.p4{
+    padding: 4em;
+}
+
+/* margin */
+
+.m2{
+    margin: 10vh 10vw;
+}
+
+.m4{
+    margin: 20vh 20vw;
+}
+
+/* margin-top */
+.mt{
+    margin-top: 0;
+}
+
+.mt2{
+    margin-top: 10vh;
+}
+
+.mt4{
+    margin-top: 20vh;
+}
+
+/* margin-bottom */
+.mb{
+    margin-bottom: 0;
+}
+
+.mb2{
+    margin-bottom: 10vh;
+}
+
+.mb4{
+    margin-bottom: 20vh;
+}
+
+.ml{
+    margin-left: 20%;
+}
+
+/* margin-right */
+
+.mr2{
+    margin-right: 10vw;
+}
+
+.mr4{
+    margin-right: 20vw;
+}
+
+/* margin vertical */
+
+.mv-auto{
+    margin: auto 0;
+}
+
+/* margin horizontal */
+
+.mh-auto{
+    margin: 0 auto;
+}
+
+/* largeur d'un élément */
+
+.w10{
+    width: 10%;
+    min-width: 10%;
+}
+
+.w20{
+    width: 20%;
+    min-width: 20%;
+}
+
+.w40{
+    width: 40%;
+    min-width: 40%;
+}
+
+.w60{
+    width: 60%;
+    min-width: 60%;
+    display: block;
+    align-self: center;
+}
+
+.w80{
+    width: 80%;
+    min-width: 80%;
+}
+
+.w100{
+    width: 100%;
+    min-width: 100%;
+}
