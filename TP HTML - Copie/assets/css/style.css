@@ -4,6 +4,9 @@ h1{
 
 section{
     background-color: #e1d2b8;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10px;
 }
 
 IMG.display{
@@ -11,7 +14,9 @@ IMG.display{
     border-radius: 50%;
     width: 30%;
     height: 30%;
-    align-self: center;
+/*    margin: auto;
+    margin-bottom: 10px;*/
+    text-align: center;
 }
 
 button.btn{
@@ -20,14 +25,17 @@ button.btn{
     color: white;
     background-color: #4caf50;
     align-self: center;
+    -webkit-box-shadow: 3px 5px 5px 1px rgba(0,0,0,0.65);
+    -moz-box-shadow: 3px 5px 5px 1px rgba(0,0,0,0.65);
+    box-shadow: 3px 5px 5px 1px rgba(0,0,0,0.65);
 }
 
-label{
-    margin-top: 0;
+input{
+    height: 25px;
 }
 
-.c{
-    align-self: center;
+body{
+    margin: auto;
 }
 
 /* padding */
@@ -87,6 +95,8 @@ label{
 .ml{
     margin-left: 20%;
 }
+
+
 
 /* margin-right */
 
