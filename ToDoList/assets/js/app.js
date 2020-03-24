@@ -37,8 +37,8 @@ document.getElementById("btn").addEventListener("click", function () {
     <li>
     <div class="container">
         <div class="round">
-          <input type="checkbox" id="checkbox" />
-          <label for="checkbox"></label> ${toDo}
+          <input type="checkbox" id="checkbox" class="checkbox" />
+          <label for="checkbox"> ${toDo}</label>
             <img src="./assets/image/poubelle.png" alt="Enregistrer" title="Enregistrer" class="bin" />
         </div>
       </div>
@@ -47,6 +47,8 @@ document.getElementById("btn").addEventListener("click", function () {
      )
 
 })
+
+
 
 //document.getElementById("btn").addEventListener("click", function () {
 

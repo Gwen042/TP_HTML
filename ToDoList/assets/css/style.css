@@ -68,3 +68,8 @@ input[type="checkbox"]:checked {
     margin:0px;
     position: relative;
   }
+
+input[type="checkbox"]:checked + label {
+    color: gray;
+    text-decoration: line-through;
+  }
