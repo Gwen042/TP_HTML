@@ -1,21 +1,53 @@
-const clear = document.querySelector(".clear");
+const clear = document.querySelector(".clear")
 
 clear.addEventListener("click", function(){
-    localStorage.clear();
-    localStorage.reload();
+    localStorage.clear()
+    localStorage.reload()
 } )
+
+// Date:
 
 dateNow = new Date()
 
-const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+const options = { weekday: 'long',  month: 'long', day: 'numeric' };
 
 document.getElementById("date").innerHTML= dateNow.toLocaleDateString("fr", options)
 
 //document.getElementById("date").innerHTML= dateNow.getDate()+"/"+(dateNow.getMonth()+1)+"/"+dateNow.getFullYear()
 
-const liste = document.getElementById("liste");
+//const liste = document.getElementById("liste");
 
-const input = document.getElementById("input");
+let input = document.getElementById("input")
+
+let liste = document.querySelector("ul")
+
+const ajoutListe = (input) => {
+        ligne = document.createElement("li")
+        liste.appendChild(ligne)
+        ligne.innerHTML= input
+}
+
+document.getElementById("btn").addEventListener("click", function () {
+
+    const toDo = input.value
+    //ajoutListe(toDo)
+
+    document.querySelector("ul").insertAdjacentHTML("beforeend",
+    `
+    <li>
+    <div class="container">
+        <div class="round">
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox"></label> ${toDo}
+            <img src="./assets/image/poubelle.png" alt="Enregistrer" title="Enregistrer" class="bin" />
+        </div>
+      </div>
+    <i class="supprimer"></i>
+</li>
+    `
+     )
+
+})
 
 //document.write(dateNow.getDate()+"/"+(dateNow.getMonth()+1)+"/"+dateNow.getFullYear())
 
@@ -25,6 +57,12 @@ localStorage.setItem("nomValeur", "truc à stocker")
 localStorage.getItem("nomValeur")
 //vider le stockage
 localStorage.clear()
+
+const btn = document.querySelector(".btn");
+
+btn.addEventListener("click", function(){
+
+} )
 
 
 //var ladate=new Date()
