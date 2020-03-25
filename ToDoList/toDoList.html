@@ -6,27 +6,24 @@
     <link rel="stylesheet" href="./assets/css/style.css"> 
 </head>
 <body>
-    <section>
+    
+<div class="cadre">
     <div class="header">
         <div class="clear"></div>
+        <div class="date">
+            <p id="date"></p>
+        </div>
         <div>
             <img src="./assets/image/nathan-anderson.jpg" alt="" title="date" class="display">
-        </div>
-        <div class="date" style="position: absolute;top:120px; width:200px; height:50px; z-index:2; font-size:200%; color: white">
-            <p id="date"></p>
         </div>
     </div>
     
     <div class="liste">
         <ul>
             <li>
-                <div class="container">
-                    <div class="round">
-                      <input type="checkbox" id="checkbox" class="checkbox" />
-                      <label for="checkbox"> Faire le tp</label>
-                        <img src="./assets/image/poubelle.png" alt="Enregistrer" title="Enregistrer" class="bin" />
-                    </div>
-                  </div>
+                <input type="checkbox" id="checkbox" class="checkbox" />
+                <label for="checkbox"> Faire le tp</label>
+                <img src="./assets/image/poubelle.png" alt="Enregistrer" title="Enregistrer" class="bin" />
             </li>
         </ul>
 
@@ -37,7 +34,7 @@
         <input type="text" value="Ajouter un to-do" id="input" placeholder="">
     </div>
 
-    </section>
+</div>
 
     <script src="./assets/js/app.js" type="text/javascript"></script>
 </body>

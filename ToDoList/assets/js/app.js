@@ -35,14 +35,10 @@ document.getElementById("btn").addEventListener("click", function () {
     document.querySelector("ul").insertAdjacentHTML("beforeend",
     `
     <li>
-    <div class="container">
-        <div class="round">
-          <input type="checkbox" id="checkbox" class="checkbox" />
-          <label for="checkbox"> ${toDo}</label>
-            <img src="./assets/image/poubelle.png" alt="Enregistrer" title="Enregistrer" class="bin" />
-        </div>
-      </div>
-</li>
+      <input type="checkbox" id="checkbox" class="checkbox" />
+      <label for="checkbox"> ${toDo}</label>
+      <img src="./assets/image/poubelle.png" alt="Enregistrer" title="Enregistrer" class="bin" />
+    </li>
     `
      )
 

@@ -2,34 +2,42 @@ body{
     background-color: #e5e5e5;
 }
 
-section{
-    align-self: center;
-    height: 80vh;
+.cadre{
+    position: relative;
+    height: 500px;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
-    width: 20%;
-    min-width: 20%;
-    margin: auto;
+    width: 250px;
+    margin: 0 40%;
     background-color: white;
-
 }
 
 ul {
     list-style-type: none;
     }
 
+.date{
+    position: absolute;
+    z-index: 1;
+    font-weight: bold;
+    color: white;
+    margin-top: 130px;
+    margin-left: 10px;    
+}
+
 .display{
     width: 100%;
     height: 30%;
-    text-align: center;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
 }
 
 .bin{
+    /*position: absolute;*/
     width: 5%;
     height: 5%;
-    text-align: right;
+    /*text-align: right;*/
+    /*margin-right: 10px;*/
 }
 
 .btn{
@@ -40,10 +48,8 @@ ul {
 }
 
 .ajout{
-    margin-bottom: 0;
-}
-
-.date{
+    position: absolute;
+    bottom: 10px; 
 }
 
 /*checkbox*/
@@ -63,10 +69,7 @@ input[type=checkbox] {
 }
 
 input[type="checkbox"]:checked {
-
     background: #66bb6a;
-    margin:0px;
-    position: relative;
   }
 
 input[type="checkbox"]:checked + label {
