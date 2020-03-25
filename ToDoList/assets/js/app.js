@@ -37,18 +37,12 @@ document.getElementById("btn").addEventListener("click", function () {
     <li>
       <input type="checkbox" id="checkbox" class="checkbox" />
       <label for="checkbox"> ${toDo}</label>
-      <img src="./assets/image/poubelle.png" alt="Enregistrer" title="Enregistrer" class="bin" />
+      <img src="./assets/image/poubelle.png" id="bin" class="bin" />
     </li>
     `
      )
 
 })
-
-
-
-//document.getElementById("btn").addEventListener("click", function () {
-
-
 
 //stocker un item
 localStorage.setItem("nomValeur", "truc à stocker")
@@ -56,5 +50,3 @@ localStorage.setItem("nomValeur", "truc à stocker")
 localStorage.getItem("nomValeur")
 //vider le stockage
 localStorage.clear()
-
-
