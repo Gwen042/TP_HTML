@@ -1,11 +1,11 @@
 document.getElementById('imgDate').src = "./assets/image/date/image" + Math.floor(Math.random() * 10) + ".jpg";
 
-const clear = document.querySelector(".clear")
+/*const clear = document.querySelector(".clear")
 
 clear.addEventListener("click", function(){
     localStorage.clear()
     localStorage.reload()
-} )
+} )*/
 
 // Date:
 
@@ -16,59 +16,51 @@ const options = { weekday: 'long',  month: 'long', day: 'numeric' };
 document.getElementById("date").innerHTML= dateNow.toLocaleDateString("fr", options)
 
 
-//const liste = document.getElementById("liste");
+// liste todo
 
-let input = document.getElementById("input")
+let todoItems = []
 
-/*
-let liste = document.querySelector("ul")
+// fonction pour ajouter des items
 
-const ajoutListe = (input) => {
-        ligne = document.createElement("li")
-        liste.appendChild(ligne)
-        ligne.innerHTML= input
-}*/
+function addTodo(texte) {
+  const todo = {
+    texte,
+    id: Date.now(),
+  }
 
-document.getElementById("btn").addEventListener("click", function () {
+  todoItems.push(todo)
 
-    const toDo = input.value
-    //ajoutListe(toDo)
-
-    document.querySelector("ul").insertAdjacentHTML("beforeend",
+  const liste = document.querySelector("ul")
+  liste.insertAdjacentHTML("beforeend",
     `
     <li>
-      <input type="checkbox" id="checkbox" class="checkbox" />
-      <label for="checkbox"> ${toDo}</label>
+      <input type="checkbox" id="${todo.id}" class="checkbox" />
+      <label for="checkbox" id="${todo.id}"> ${todo.texte}</label>
       <img src="./assets/image/poubelle.png" class="bin" />
     </li>
     `
-     )
+  )
 
+}
+
+// fonctionnalité du bouton d'ajout d'item
+
+const ajout = document.getElementById("btn")
+ajout.addEventListener('click', event => {
+  let input = document.getElementById("input")
+
+  const todo = input.value.trim();
+  if (todo !== '') {
+    addTodo(todo)
+  }
 })
 
-//supprimer
+// Supprimer un item
 
-let bin = document.getElementsByClassName("bin")
-
-//binRemove = () =>{
-for(var i = 0; i < bin.length; i++) {
-    (function(){
-        let d = bin[i].parentNode
-        bin[i].addEventListener('click', function(){
-        d.remove()})
-        //console.log(d)
-    }());
-};
-//}
-
-
-//binRemove()
-
-/*
-//stocker un item
-localStorage.setItem("nomValeur", "truc à stocker")
-//récupérer un item
-localStorage.getItem("nomValeur")
-//vider le stockage
-localStorage.clear()
-*/
+const bin = document.querySelector('.liste');
+bin.addEventListener('click', event => {
+  if(event.target.classList.contains('bin')){
+    d = event.target.parentNode
+    d.remove()
+  }
+})
